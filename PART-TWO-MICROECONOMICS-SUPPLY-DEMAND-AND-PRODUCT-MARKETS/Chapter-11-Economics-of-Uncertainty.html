@@ -1,0 +1,973 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第十一章  不确定性和博弈论 · 经济学 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="胡伟煌">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-12-Ho-Markets-Determine-Ines.html" />
+    
+    
+    <link rel="prev" href="Chapter-10-Competition-among-the-Fe.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.ico">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"huweihuang/samuelson-economics","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.huweihuang.com" target="_blank" class="custom-link">胡伟煌的博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一编 基本概念</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../PART-ONE-BASIC-CONCEPTS/Chapter-1-The-Central-Concepts-of-Economics.html">
+            
+                <a href="../PART-ONE-BASIC-CONCEPTS/Chapter-1-The-Central-Concepts-of-Economics.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    第一章 经济学基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../PART-ONE-BASIC-CONCEPTS/Chapter-2-The-Modern-Mixed-Economy.html">
+            
+                <a href="../PART-ONE-BASIC-CONCEPTS/Chapter-2-The-Modern-Mixed-Economy.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    第二章  现代经济中的市场与政府
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../PART-ONE-BASIC-CONCEPTS/Chapter-3-Basic-Elements-of-Supply-and-Demand.html">
+            
+                <a href="../PART-ONE-BASIC-CONCEPTS/Chapter-3-Basic-Elements-of-Supply-and-Demand.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    第三章  供给与需求的基本原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二编 供给、需求和产品市场</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="Chapter-4-Supply-and-Demand-Elasticity-and-Applications.html">
+            
+                <a href="Chapter-4-Supply-and-Demand-Elasticity-and-Applications.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    第四章  供给与需求的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="Chapter-5-Demand-and-Consumer-Behavior.html">
+            
+                <a href="Chapter-5-Demand-and-Consumer-Behavior.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    第五章  需求与消费者行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="Chapter-6-Production-and-Business-Organization.html">
+            
+                <a href="Chapter-6-Production-and-Business-Organization.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    第六章  生产和企业组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Chapter-7-Analysis-of-Costs.html">
+            
+                <a href="Chapter-7-Analysis-of-Costs.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    第七章  成本分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Chapter-8-Analysis-of-Perfectly-Competitive-Markets.html">
+            
+                <a href="Chapter-8-Analysis-of-Perfectly-Competitive-Markets.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    第八章  完全竞争市场分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Chapter-9-Imperfect-Competition-and-Monopoly.html">
+            
+                <a href="Chapter-9-Imperfect-Competition-and-Monopoly.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    第九章  不完全竞争及其极端形式垄断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="Chapter-10-Competition-among-the-Fe.html">
+            
+                <a href="Chapter-10-Competition-among-the-Fe.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    第十章  寡头和垄断竞争
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.8" data-path="Chapter-11-Economics-of-Uncertainty.html">
+            
+                <a href="Chapter-11-Economics-of-Uncertainty.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    第十一章  不确定性和博弈论
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三编 要素市场：劳动，土地和资本</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-12-Ho-Markets-Determine-Ines.html">
+            
+                <a href="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-12-Ho-Markets-Determine-Ines.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    第十二章  市场如何决定收入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-13-The-Labor-Market.html">
+            
+                <a href="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-13-The-Labor-Market.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    第十三章  劳动市场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-14-Land-Natural-Resources-and-the-Environment.html">
+            
+                <a href="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-14-Land-Natural-Resources-and-the-Environment.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    第十四章  土地和资本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四编 应用微观经济学：国际贸易、政府和环境</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-15-International-Trade.html">
+            
+                <a href="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-15-International-Trade.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    第十五章 比较优势和贸易保护主义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-16-Government-Taxation-and-Expenditure.html">
+            
+                <a href="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-16-Government-Taxation-and-Expenditure.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    第十六章 政府税收与支出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-17-Market-Efficiency.html">
+            
+                <a href="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-17-Market-Efficiency.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    第十七章 促进市场更富效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-18-Environmental-Protection.html">
+            
+                <a href="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-18-Environmental-Protection.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    第十八章  环境保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-19-Efficiency-vs-Equality-The-Big-Tradeoff.html">
+            
+                <a href="../PART-FOUR-APPLICATIONS-OF-ECONOMIC-PRINCIPLES/Chapter-19-Efficiency-vs-Equality-The-Big-Tradeoff.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    第十九章 效率与公平：重大权衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五编 宏观经济学：经济增长与商业周期</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-20-Overvie-of-Macroeconomics.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-20-Overvie-of-Macroeconomics.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    第二十章 宏观经济学概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-21-Measuring-Economic-Activity.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-21-Measuring-Economic-Activity.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    第二十一章 经济活动的衡量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-22-Consumption-and-Investment.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-22-Consumption-and-Investment.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    第二十二章 消费与投资
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-23-Business-Cycles-and-Aggregate-Demand.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-23-Business-Cycles-and-Aggregate-Demand.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    第二十三章 商业周期波动和总需求理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-24-Multiplier-Model.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-24-Multiplier-Model.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    第二十四章 乘数模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-25-Money-and-the-Financial-System.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-25-Money-and-the-Financial-System.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    第二十五章 金融市场和货币的特殊形态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-26-Monetary-Policy-and-the-Economy.html">
+            
+                <a href="../PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-26-Monetary-Policy-and-the-Economy.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    第二十六章  中央银行与货币政策
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第六编 经济发展、经济增长与全球经济</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-27-Economic-Groth.html">
+            
+                <a href="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-27-Economic-Groth.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    第二十七章  经济增长的进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-28-The-Challenge-of-Economic-Development.html">
+            
+                <a href="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-28-The-Challenge-of-Economic-Development.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    第二十八章  经济发展的挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-29-Exchange-Rates-and-the-International-Financial-System.html">
+            
+                <a href="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-29-Exchange-Rates-and-the-International-Financial-System.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    第二十九章  汇率与国际金融体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-30-Open-Economy-Macroeconomics.html">
+            
+                <a href="../PART-SiX-GROWTH-DEVELOPMENT-AND-THE-GLOBAL-ECONOMY/Chapter-30-Open-Economy-Macroeconomics.html">
+            
+                    
+                        <b>7.4.</b>
+                    
+                    第三十章  开放经济的宏观经济学
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第七编  失业、通货膨胀和经济政策</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-31-Unemployment-and-the-Foundations-of-Aggregate-Supply.html">
+            
+                <a href="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-31-Unemployment-and-the-Foundations-of-Aggregate-Supply.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    第三十一章 失业与总供给的基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-32-Inflation.html">
+            
+                <a href="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-32-Inflation.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    第三十二章 保持价格稳定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-33-Frontiers-of-Macroeconomics.html">
+            
+                <a href="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-33-Frontiers-of-Macroeconomics.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    第三十三章 宏观经济学流派及其论战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-34-Policy-Economic.html">
+            
+                <a href="../PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-34-Policy-Economic.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    第三十四章 经济稳定与增长的政策
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第十一章  不确定性和博弈论</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x5341;&#x4E00;&#x7AE0;--&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x548C;&#x535A;&#x5F08;&#x8BBA;--&#xFF08;p217&#xFF09;"><strong>&#x7B2C;&#x5341;&#x4E00;&#x7AE0;  &#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x548C;&#x535A;&#x5F08;&#x8BBA;  &#xFF08;P217&#xFF09;</strong></h1>
+<p>&#x7ECF;&#x6D4E;&#x6D3B;&#x52A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F80;&#x5F80;&#x4F1A;&#x51FA;&#x73B0;&#x65E0;&#x6CD5;&#x7528;&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x52A0;&#x4EE5;&#x628A;&#x63E1;&#x7684;&#x590D;&#x6742;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x79CD;&#x56F0;&#x60D1;&#x6765;&#x6E90;&#x4E8E;&#x7ECF;&#x6D4E;&#x751F;&#x6D3B;&#x4E2D;&#x5927;&#x91CF;&#x7684;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#xFF08;&#x5373;<strong>&#x4E0D;&#x786E;&#x5B9A;&#x7ECF;&#x6D4E;&#x5B66;</strong>&#x5206;&#x6790;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x6E90;&#x4E8E;&#x591A;&#x6570;&#x7ECF;&#x6D4E;&#x751F;&#x6D3B;&#x4E2D;&#x5145;&#x6EE1;&#x4E86;&#x4E89;&#x8BBA;&#xFF0C;&#x8BA8;&#x4EF7;&#x8FD8;&#x4EF7;&#x548C;&#x7B56;&#x7565;&#x9009;&#x62E9;&#xFF08;&#x5373;<strong>&#x535A;&#x5F08;&#x8BBA;</strong>&#x7814;&#x7A76;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#x3002;</p>
+<h1 id="a-&#x98CE;&#x9669;&#x548C;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x7ECF;&#x6D4E;&#x5B66;"><strong>A</strong> <strong>&#x98CE;&#x9669;&#x548C;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x7ECF;&#x6D4E;&#x5B66;</strong></h1>
+<p>&#x5178;&#x578B;&#x6848;&#x4F8B;&#xFF1A;&#x5F00;&#x53D1;&#x6CB9;&#x4E95;&#x3002;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x4EA7;&#x51FA;&#xFF0C;&#x6210;&#x672C;&#xFF0C;&#x6CB9;&#x4EF7;&#xFF0C;&#x8FD0;&#x8F93;&#xFF0C;&#x653F;&#x6CBB;&#x53CA;&#x5176;&#x4ED6;&#x5F71;&#x54CD;&#x3002;</p>
+<h2 id="127-&#x6295;&#x673A;&#xFF1A;&#x8D44;&#x672C;&#x4E0E;&#x5546;&#x54C1;&#x7684;&#x8DE8;&#x65F6;&#x7A7A;&#x8C03;&#x914D;">127 &#x6295;&#x673A;&#xFF1A;&#x8D44;&#x672C;&#x4E0E;&#x5546;&#x54C1;&#x7684;&#x8DE8;&#x65F6;&#x7A7A;&#x8C03;&#x914D;</h2>
+<p><strong>&#x6295;&#x673A;</strong>&#xFF1A;&#x5305;&#x62EC;&#x5BF9;&#x6709;&#x4EF7;&#x503C;&#x7269;&#x54C1;&#x6216;&#x5546;&#x54C1;&#x7684;&#x4E70;&#x548C;&#x5356;&#xFF0C;&#x662F;&#x4ECE;&#x5E02;&#x573A;&#x4EF7;&#x683C;&#x7684;&#x6CE2;&#x52A8;&#x4E2D;&#x83B7;&#x53D6;&#x5229;&#x76CA;&#x7684;&#x4E00;&#x79CD;&#x6D3B;&#x52A8;&#x3002;&#x4E0D;&#x662F;&#x81EA;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x4E0D;&#x5E0C;&#x671B;&#x770B;&#x5230;&#x7684;&#x5C31;&#x662F;&#x8D27;&#x7269;&#x88AB;&#x9001;&#x5230;&#x81EA;&#x5BB6;&#x7684;&#x5927;&#x95E8;&#x53E3;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x5728;&#x5546;&#x54C1;&#x5145;&#x88D5;&#x4EF7;&#x683C;&#x4F4E;&#x5EC9;&#x65F6;&#x4E70;&#x8FDB;&#xFF0C;&#x5546;&#x54C1;&#x7D27;&#x4FCF;&#x4EF7;&#x683C;&#x9AD8;&#x6602;&#x65F6;&#x5356;&#x51FA;&#xFF0C;&#x6295;&#x673A;&#x6709;&#x52A9;&#x4E8E;&#x71A8;&#x5E73;&#x5546;&#x54C1;&#x5728;&#x4E0D;&#x540C;&#x65F6;&#x95F4;&#x548C;&#x5730;&#x533A;&#x7684;&#x4EF7;&#x683C;&#x5DEE;&#x5F02;&#xFF0C;&#x4ECE;&#x800C;&#x5728;&#x4E8B;&#x5B9E;&#x4E0A;&#x63D0;&#x9AD8;&#x4E86;&#x751F;&#x4EA7;&#x7684;&#x6548;&#x7387;&#x3002;</p>
+<h2 id="128-&#x5957;&#x5229;&#x548C;&#x4EF7;&#x683C;&#x5730;&#x7406;&#x683C;&#x5C40;">128 &#x5957;&#x5229;&#x548C;&#x4EF7;&#x683C;&#x5730;&#x7406;&#x683C;&#x5C40;</h2>
+<p><strong>&#x5957;&#x5229;</strong>&#xFF1A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x6295;&#x673A;&#x6D3B;&#x52A8;&#xFF0C;&#x901A;&#x8FC7;&#x4E70;&#x5356;&#x540C;&#x4E00;&#x5546;&#x54C1;&#x4EE5;&#x964D;&#x4F4E;&#x6216;&#x6D88;&#x9664;&#x5730;&#x533A;&#x5DEE;&#x4EF7;&#x3002;</p>
+<p><strong>&#x7531;&#x4E8E;&#x5957;&#x5229;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5E02;&#x573A;&#x4E4B;&#x95F4;&#x7684;&#x4EF7;&#x683C;&#x5DEE;&#x901A;&#x5E38;&#x4E0D;&#x4F1A;&#x8D85;&#x8FC7;&#x5546;&#x54C1;&#x5728;&#x5E02;&#x573A;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x79FB;&#x6210;&#x672C;&#x3002;&#x5957;&#x5229;&#x6D3B;&#x52A8;&#x6709;&#x52A9;&#x4E8E;&#x62C9;&#x5E73;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x4EA7;&#x54C1;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5E02;&#x573A;&#x4E0A;&#x7684;&#x4EF7;&#x683C;&#x5DEE;&#x522B;&#x3002;</strong></p>
+<h2 id="129-&#x4E0D;&#x540C;&#x65F6;&#x95F4;&#x7684;&#x6295;&#x673A;&#x4E0E;&#x4EF7;&#x683C;&#x884C;&#x4E3A;">129 &#x4E0D;&#x540C;&#x65F6;&#x95F4;&#x7684;&#x6295;&#x673A;&#x4E0E;&#x4EF7;&#x683C;&#x884C;&#x4E3A;</h2>
+<p><strong>&#x6295;&#x673A;&#x63ED;&#x793A;&#x4E86;&#x770B;&#x4E0D;&#x89C1;&#x7684;&#x624B;&#x7684;&#x6CD5;&#x5219;&#x5728;&#x8D77;&#x7684;&#x4F5C;&#x7528;&#x3002;&#x901A;&#x8FC7;&#x62C9;&#x5E73;&#x4F9B;&#x7ED9;&#x91CF;&#x548C;&#x4EF7;&#x683C;&#xFF0C;&#x6295;&#x673A;&#x5B9E;&#x9645;&#x4E0A;&#x5728;&#x63D0;&#x9AD8;&#x7ECF;&#x6D4E;&#x6548;&#x76CA;&#x3002;&#x901A;&#x8FC7;&#x5C06;&#x5546;&#x54C1;&#x5728;&#x6570;&#x91CF;&#x9887;&#x4E30;&#x7684;&#x65F6;&#x671F;&#x8F6C;&#x79FB;&#x5230;&#x6570;&#x91CF;&#x7A00;&#x7F3A;&#x7684;&#x65F6;&#x671F;&#xFF0C;&#x6295;&#x673A;&#x5546;&#x5728;&#x4EF7;&#x683C;&#x548C;&#x8FB9;&#x9645;&#x6548;&#x7528;&#x4F4E;&#x7684;&#x5E02;&#x573A;&#x8D2D;&#x8FDB;&#x5546;&#x54C1;&#xFF0C;&#x5728;&#x4EF7;&#x683C;&#x548C;&#x8FB9;&#x9645;&#x6548;&#x7528;&#x9AD8;&#x7684;&#x5E02;&#x573A;&#x5356;&#x51FA;&#x3002;&#x6295;&#x673A;&#x5546;&#x4EEC;&#x5728;&#x8FFD;&#x6C42;&#x4ED6;&#x4EEC;&#x79C1;&#x4EBA;&#x5229;&#x76CA;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x63D0;&#x9AD8;&#x4E86;&#x516C;&#x5171;&#x7684;&#x7ECF;&#x6D4E;&#x798F;&#x5229;&#x3002;</strong></p>
+<h2 id="130-&#x901A;&#x8FC7;&#x5957;&#x671F;&#x4FDD;&#x503C;&#x5206;&#x644A;&#x98CE;&#x9669;">130 &#x901A;&#x8FC7;&#x5957;&#x671F;&#x4FDD;&#x503C;&#x5206;&#x644A;&#x98CE;&#x9669;</h2>
+<p>&#x6295;&#x673A;&#x5E02;&#x573A;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x8BA9;&#x4EBA;&#x4EEC;&#x901A;&#x8FC7;&#x5957;&#x671F;&#x4FDD;&#x503C;&#x5206;&#x644A;&#x98CE;&#x9669;&#x3002;</p>
+<p><strong>&#x5957;&#x671F;&#x4FDD;&#x503C;&#x662F;&#x6307;&#x901A;&#x8FC7;&#x5BF9;&#x6240;&#x62E5;&#x6709;&#x7684;&#x4E00;&#x79CD;&#x5546;&#x54C1;&#x505A;&#x5BF9;&#x51B2;&#x4EA4;&#x6613;&#x6765;&#x964D;&#x4F4E;&#x98CE;&#x9669;&#x3002;**</strong>&#x4E5F;&#x5373;&#xFF1A;&#x5728;&#x4EF7;&#x683C;&#x4F4E;&#x4E70;&#x5165;&#x65F6;&#x7ACB;&#x523B;&#x8FDB;&#x884C;&#x8FDC;&#x671F;&#x4EA4;&#x6613;&#x5356;&#x51FA;&#xFF0C;&#x534F;&#x8BAE;&#x7684;&#x672A;&#x6765;&#x4EA4;&#x6613;&#x4EF7;&#x683C;&#x53EF;&#x4EE5;&#x56DE;&#x907F;&#x4EF7;&#x683C;&#x6CE2;&#x52A8;&#x5E26;&#x6765;&#x7684;&#x98CE;&#x9669;&#x3002;**</p>
+<h2 id="131-&#x6295;&#x673A;&#x7684;&#x7ECF;&#x6D4E;&#x5F71;&#x54CD;">131 &#x6295;&#x673A;&#x7684;&#x7ECF;&#x6D4E;&#x5F71;&#x54CD;</h2>
+<p>&#x6295;&#x673A;&#x5E02;&#x573A;&#x4E0D;&#x4EC5;&#x4ECE;&#x65F6;&#x95F4;&#x4E0A;&#x548C;&#x7A7A;&#x95F4;&#x4E0A;&#x4FC3;&#x6210;&#x4E86;&#x4EF7;&#x683C;&#x53CA;&#x914D;&#x7F6E;&#x5F62;&#x5F0F;&#x7684;&#x6539;&#x5584;&#xFF0C;&#x8FD8;&#x6709;&#x52A9;&#x4E8E;&#x98CE;&#x9669;&#x7684;&#x8F6C;&#x79FB;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#x90FD;&#x662F;&#x90A3;&#x4E9B;&#x60F3;&#x4ECE;&#x4EF7;&#x683C;&#x53D8;&#x52A8;&#x4E2D;&#x83B7;&#x5229;&#x7684;&#x6295;&#x673A;&#x5546;&#x6240;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x8FD9;&#x90FD;&#x8868;&#x660E;&#x4E86;&#x770B;&#x4E0D;&#x89C1;&#x7684;&#x624B;&#x5728;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x901A;&#x8FC7;&#x8D27;&#x5E01;&#x7684;&#x9762;&#x7EB1;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF0C;&#x5B8C;&#x7F8E;&#x7684;&#x6295;&#x673A;&#x884C;&#x4E3A;&#x5B9E;&#x73B0;&#x4E86;&#x5546;&#x54C1;&#x4ECE;&#x5176;&#x6570;&#x91CF;&#x9887;&#x4E30;&#x65F6;&#x671F;&#xFF08;&#x4EF7;&#x683C;&#x4F4E;&#xFF09;&#x5411;&#x6570;&#x91CF;&#x7A00;&#x7F3A;&#x65F6;&#x671F;&#xFF08;&#x4EF7;&#x683C;&#x9AD8;&#xFF09;&#x7684;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#x3002;</p>
+<p><strong>&#x5728;&#x6BCF;&#x4E00;&#x5E74;&#x7684;&#x6536;&#x6210;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x6BCF;&#x4E00;&#x5E74;&#x7684;&#x6D88;&#x8D39;&#x91CF;&#x76F8;&#x7B49;&#x65F6;&#xFF0C;&#x4E24;&#x5E74;&#x5408;&#x8BA1;&#x7684;&#x603B;&#x6548;&#x76CA;&#x548C;&#x7ECF;&#x6D4E;&#x6548;&#x7387;&#x624D;&#x4F1A;&#x8FBE;&#x5230;&#x6700;&#x5927;&#x3002;</strong>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF1A;<strong>&#x6D88;&#x8D39;&#x91CF;&#x5927;&#xFF0C;&#x6309;&#x7167;&#x8FB9;&#x9645;&#x6536;&#x76CA;&#x9012;&#x51CF;&#x89C4;&#x5F8B;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x8FB9;&#x9645;&#x6536;&#x76CA;&#x4E0B;&#x964D;&#xFF0C;&#x628A;&#x4E00;&#x90E8;&#x5206;&#x6D88;&#x8D39;&#x91CF;&#x8F6C;&#x79FB;&#x5230;&#x6D88;&#x8D39;&#x91CF;&#x4F4E;&#x7684;&#x5E74;&#x4EFD;&#xFF0C;&#x5C31;&#x4F1A;&#x628A;&#x6D88;&#x8D39;&#x4ECE;&#x8FB9;&#x9645;&#x6548;&#x7528;&#x8F83;&#x4F4E;&#x7684;&#x65F6;&#x671F;&#x8F6C;&#x5411;&#x8FB9;&#x9645;&#x6548;&#x7528;&#x8F83;&#x9AD8;&#x7684;&#x65F6;&#x671F;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x6574;&#x4F53;&#x7684;&#x7ECF;&#x6D4E;&#x6548;&#x76CA;&#x3002;</strong></p>
+<p>&#x7406;&#x60F3;&#x7684;&#x6295;&#x673A;&#x5BF9;&#x4E8E;&#x51CF;&#x5C11;&#x6D88;&#x8D39;&#x7684;&#x4E0D;&#x5229;&#x6CE2;&#x52A8;&#x6709;&#x91CD;&#x8981;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x4EBA;&#x4EBA;&#x90FD;&#x670D;&#x4ECE;&#x8FB9;&#x9645;&#x6548;&#x76CA;&#x9012;&#x51CF;&#x89C4;&#x5F8B;&#x7684;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x4E2D;&#xFF0C;&#x6295;&#x673A;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x603B;&#x4F53;&#x6548;&#x7528;&#x548C;&#x5206;&#x914D;&#x6548;&#x7387;&#x3002;</p>
+<h2 id="132-&#x98CE;&#x9669;&#x548C;&#x4E0D;&#x786E;&#x5B9A;&#x6027;">132 &#x98CE;&#x9669;&#x548C;&#x4E0D;&#x786E;&#x5B9A;&#x6027;</h2>
+<p>  &#x82E5;&#x4E00;&#x4E2A;&#x4EBA;&#x4E3A;&#x635F;&#x5931;&#x4E00;&#x5B9A;&#x91CF;&#x7684;&#x6536;&#x5165;&#x800C;&#x4EA7;&#x751F;&#x7684;&#x75DB;&#x82E6;&#x611F;&#x5927;&#x4E8E;&#x4ED6;&#x4E3A;&#x5F97;&#x5230;&#x540C;&#x7B49;&#x6570;&#x91CF;&#x7684;&#x6536;&#x5165;&#x800C;&#x4EA7;&#x751F;&#x7684;&#x6EE1;&#x8DB3;&#x611F;&#xFF0C;&#x5219;&#x4ED6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;<strong>&#x98CE;&#x9669;&#x89C4;&#x907F;&#x8005;</strong>&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x53EF;&#x4EE5;&#x79F0;&#x4E4B;&#x4E3A;&#x98CE;&#x9669;&#x7231;&#x597D;&#x8005;&#x3002;</p>
+<p>  &#x4E00;&#x822C;&#x7684;&#x8BF4;&#xFF0C;&#x4EBA;&#x4EEC;&#x4E00;&#x822C;&#x90FD;&#x4E0D;&#x613F;&#x5192;&#x98CE;&#x9669;&#x3002;&#x5728;&#x5176;&#x4ED6;&#x6761;&#x4EF6;&#x76F8;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x6D88;&#x8D39;&#x6C34;&#x5E73;&#x6765;&#x8BF4;&#xFF0C;&#x4EBA;&#x4EEC;&#x66F4;&#x559C;&#x6B22;&#x505A;&#x6709;&#x628A;&#x63E1;&#x7684;&#x4E8B;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5728;&#x540C;&#x6837;&#x7684;&#x5E73;&#x5747;&#x503C;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x4EBA;&#x4EEC;&#x5B81;&#x613F;&#x8981;&#x4E0D;&#x786E;&#x5B9A;&#x5C0F;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;&#x539F;&#x56E0;&#xFF0C;&#x964D;&#x4F4E;&#x6D88;&#x8D39;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x7684;&#x6D3B;&#x52A8;&#x80FD;&#x591F;&#x5BFC;&#x81F4;&#x7ECF;&#x6D4E;&#x798F;&#x5229;&#x7684;&#x6539;&#x5584;&#x3002;</p>
+<p><strong>&#x8D4C;&#x535A;&#x4EA7;&#x751F;&#x7684;&#x95EE;&#x9898;</strong></p>
+<p><strong>&#x7406;&#x60F3;&#x7684;&#x6295;&#x673A;&#x884C;&#x4E3A;&#x4F1A;&#x5E26;&#x6765;&#x793E;&#x4F1A;&#x798F;&#x5229;&#xFF0C;&#x8D4C;&#x535A;&#x76F8;&#x53CD;&#xFF0C;&#x4F1A;&#x5E26;&#x6765;&#x4E25;&#x91CD;&#x7684;&#x7ECF;&#x6D4E;&#x95EE;&#x9898;&#xFF1A;&#x9664;&#x4E86;&#x5A31;&#x4E50;&#x523A;&#x6FC0;&#xFF0C;&#x8D4C;&#x535A;&#x4E0D;&#x4EA7;&#x751F;&#x4EFB;&#x4F55;&#x65B0;&#x7684;&#x5546;&#x54C1;&#x548C;&#x670D;&#x52A1;&#xFF1B;&#x662F;&#x4E00;&#x79CD;&#x201C;&#x8D1F;&#x548C;&#x535A;&#x5F08;&#x201D;&#xFF0C;&#x7531;&#x4E8E;&#x8D4C;&#x573A;&#x603B;&#x8981;&#x4ECE;&#x8D4C;&#x6CE8;&#x4E2D;&#x53D6;&#x8D70;&#x4E00;&#x4EFD;&#xFF0C;&#x957F;&#x8FDC;&#x770B;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x5F53;&#x4E8B;&#x4EBA;&#x90FD;&#x8981;&#x8F93;&#x94B1;&#xFF1B;&#x8D4C;&#x535A;&#x4F1A;&#x52A0;&#x5927;&#x6536;&#x5165;&#x5DEE;&#x8DDD;&#x7684;&#x6269;&#x5927;&#xFF1B;&#x8D4C;&#x535A;&#x4F1A;&#x5E26;&#x6765;&#x5176;&#x4ED6;&#x7684;&#x793E;&#x4F1A;&#x95EE;&#x9898;&#x3002;</strong></p>
+<p><strong>&#x8D4C;&#x535A;&#x5408;&#x6CD5;&#x5316;&#x548C;&#x5F69;&#x7968;&#x4E1A;&#x53D1;&#x5C55;&#x539F;&#x56E0;&#xFF1A;&#x653F;&#x5E9C;&#x5BF9;&#x8D22;&#x653F;&#x6536;&#x5165;&#x7684;&#x6E34;&#x671B;&#xFF1B;&#x901A;&#x8FC7;&#x6536;&#x53D6;&#x8FD9;&#x4E9B;&#x6D3B;&#x52A8;&#x7684;&#x90E8;&#x5206;&#x6536;&#x76CA;&#x6295;&#x8D44;&#x516C;&#x5171;&#x9879;&#x76EE;&#xFF0C;&#x4F7F;&#x79C1;&#x4EBA;&#x6076;&#x4E60;&#x53EF;&#x4EE5;&#x4FC3;&#x8FDB;&#x516C;&#x4F17;&#x5229;&#x76CA;&#x3002;</strong></p>
+<h2 id="133-&#x4FDD;&#x9669;&#x4E0E;&#x98CE;&#x9669;&#x5206;&#x644A;">133 &#x4FDD;&#x9669;&#x4E0E;&#x98CE;&#x9669;&#x5206;&#x644A;</h2>
+<p><strong>&#x98CE;&#x9669;&#x5206;&#x644A;</strong>&#xFF1A;&#x5C06;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x4EBA;&#x5F88;&#x5927;&#x7684;&#x98CE;&#x9669;&#x5206;&#x644A;&#x7ED9;&#x5F88;&#x591A;&#x4EBA;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x6BCF;&#x4E2A;&#x4EBA;&#x627F;&#x62C5;&#x7684;&#x98CE;&#x9669;&#x90FD;&#x5F88;&#x5C0F;&#x3002;&#x4E3B;&#x8981;&#x5F62;&#x5F0F;&#x662F;&#x65B9;&#x5411;&#x76F8;&#x53CD;&#x7684;&#x8D4C;&#x535A;&#x5F62;&#x5F0F;&#xFF1A;<strong>&#x4FDD;&#x9669;</strong>&#x3002;</p>
+<p>&#x4FDD;&#x9669;&#x516C;&#x53F8;&#x7684;&#x4F18;&#x52BF;&#x5728;&#x4E8E;&#xFF1A;&#x5BF9;&#x4E2A;&#x4EBA;&#x6765;&#x8BF4;&#x96BE;&#x4EE5;&#x9884;&#x6599;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5BF9;&#x6574;&#x4E2A;&#x4EBA;&#x7FA4;&#x6765;&#x8BF4;&#x5F80;&#x5F80;&#x6709;&#x8F83;&#x5F3A;&#x7684;&#x9884;&#x89C1;&#x6027;&#x3002;&#x5BF9;&#x4E8E;&#x62E5;&#x6709;&#x623F;&#x4EA7;&#x7684;&#x623F;&#x4E3B;&#x6765;&#x8BF4;&#xFF0C;&#x8981;&#x4E48;&#x5931;&#x53BB;&#x8D2D;&#x4E70;&#x4FDD;&#x9669;&#x7684;&#x56FA;&#x5B9A;&#x635F;&#x5931;&#xFF0C;&#x8981;&#x4E48;&#x627F;&#x62C5;&#x5C0F;&#x6982;&#x7387;&#x7684;&#x706B;&#x707E;&#x7B49;&#x5E26;&#x6765;&#x7684;&#x60E8;&#x91CD;&#x635F;&#x5931;&#xFF0C;&#x7531;&#x4E8E;&#x662F;&#x98CE;&#x9669;&#x89C4;&#x907F;&#x8005;&#xFF0C;&#x623F;&#x4E3B;&#x4F1A;&#x8D2D;&#x4E70;&#x4FDD;&#x9669;&#x3002;</p>
+<p>&#x4FDD;&#x9669;&#x5C06;&#x98CE;&#x9669;&#x4ECE;&#x98CE;&#x9669;&#x89C4;&#x907F;&#x8005;&#x6216;&#x98CE;&#x9669;&#x8F83;&#x5927;&#x7684;&#x4E00;&#x65B9;&#xFF0C;&#x8F6C;&#x79FB;&#x5230;&#x504F;&#x597D;&#x98CE;&#x9669;&#x8005;&#x6216;&#x5BB9;&#x6613;&#x627F;&#x62C5;&#x98CE;&#x9669;&#x8005;&#x7684;&#x4E00;&#x65B9;&#x3002;&#x4F5C;&#x4E3A;&#x53E6;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x8D4C;&#x535A;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x53D1;&#x6325;&#x4E0E;&#x8D4C;&#x535A;&#x76F8;&#x53CD;&#x7684;&#x4F5C;&#x7528;&#xFF1A;&#x5C3D;&#x7BA1;&#x81EA;&#x7136;&#x754C;&#x4F1A;&#x9020;&#x6210;&#x98CE;&#x9669;&#xFF0C;&#x4F46;&#x4FDD;&#x9669;&#x5374;&#x80FD;&#x591F;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x51CF;&#x8F7B;&#x6216;&#x5206;&#x6563;&#x8FD9;&#x79CD;&#x98CE;&#x9669;&#x3002;</p>
+<h2 id="134-&#x8D44;&#x672C;&#x5E02;&#x573A;&#x4E0E;&#x98CE;&#x9669;&#x5206;&#x62C5;">134 &#x8D44;&#x672C;&#x5E02;&#x573A;&#x4E0E;&#x98CE;&#x9669;&#x5206;&#x62C5;</h2>
+<p><strong>&#x91D1;&#x878D;&#x7ECF;&#x6D4E;&#x5B66;</strong>&#x8003;&#x67E5;&#x7684;&#x662F;&#x6295;&#x8D44;&#x8005;&#x5728;&#x7ED9;&#x5B9A;&#x7684;&#x98CE;&#x9669;&#x6C34;&#x5E73;&#x4E0A;&#xFF0C;&#x5982;&#x4F55;&#x5206;&#x914D;&#x8D44;&#x91D1;&#x4EE5;&#x5B9E;&#x73B0;&#x6700;&#x5927;&#x7684;&#x6536;&#x76CA;&#xFF0C;&#x4EE5;&#x53CA;&#x80A1;&#x7968;&#x4EF7;&#x683C;&#x548C;&#x5176;&#x4ED6;&#x91D1;&#x878D;&#x8D44;&#x4EA7;&#x7684;&#x8FD0;&#x4F5C;&#x673A;&#x5236;&#x3002;</p>
+<p><strong>&#x901A;&#x8FC7;&#x5C06;&#x98CE;&#x9669;&#x6027;&#x8D44;&#x4EA7;&#x7684;&#x6240;&#x6709;&#x6743;&#x5206;&#x6563;&#x5230;&#x4F17;&#x591A;&#x6240;&#x6709;&#x8005;&#x8EAB;&#x4E0A;&#xFF0C;&#x8D44;&#x672C;&#x5E02;&#x573A;&#x4FBF;&#x53EF;&#x4EE5;&#x5206;&#x6563;&#x98CE;&#x9669;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x9F13;&#x52B1;&#x4EBA;&#x4EEC;&#x4ECE;&#x4E8B;&#x5927;&#x89C4;&#x6A21;&#x6295;&#x8D44;&#xFF0C;&#x800C;&#x8FD9;&#x6837;&#x7684;&#x6295;&#x8D44;&#x548C;&#x98CE;&#x9669;&#x5BF9;&#x4E8E;&#x5355;&#x4E2A;&#x6240;&#x6709;&#x8005;&#x6765;&#x8BF4;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x3002;</strong></p>
+<p><strong>&#x4FE1;&#x606F;&#x7ECF;&#x6D4E;&#x4E2D;&#x7684;&#x5E02;&#x573A;&#x4E0D;&#x7075;</strong></p>
+<p>&#x4E0E;&#x4E0A;&#x8FF0;&#x5BF9;&#x98CE;&#x9669;&#x7684;&#x4E86;&#x89E3;&#x548C;&#x6709;&#x6548;&#x7387;&#x8FD0;&#x884C;&#x7684;&#x5047;&#x8BBE;&#x6765;&#x8BF4;&#xFF0C;&#x73B0;&#x5B9E;&#x4E2D;&#x5F80;&#x5F80;&#x5B58;&#x5728;&#x4E0D;&#x786E;&#x5B9A;&#x548C;&#x98CE;&#x9669;&#x3002;&#x5E02;&#x573A;&#x4E0D;&#x7075;&#x7684;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x56E0;&#x7D20;&#x662F;&#xFF1A;<strong>&#x9006;&#x5411;</strong>&#x9009;&#x62E9;&#x548C;<strong>&#x9053;&#x5FB7;&#x98CE;&#x9669;</strong>&#x3002;</p>
+<h2 id="135&#x9053;&#x5FB7;&#x98CE;&#x9669;&#x548C;&#x4F60;&#x9006;&#x5411;&#x9009;&#x62E9;">135&#x9053;&#x5FB7;&#x98CE;&#x9669;&#x548C;&#x4F60;&#x9006;&#x5411;&#x9009;&#x62E9;</h2>
+<p><strong>&#x9053;&#x5FB7;&#x98CE;&#x9669;</strong>  &#x6709;&#x6548;&#x7684;&#x4FDD;&#x9669;&#x5E02;&#x573A;&#x53EA;&#x80FD;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x6761;&#x4EF6;&#x4E0B;&#x624D;&#x80FD;&#x5B58;&#x5728;&#xFF1A;<strong>&#x5B58;&#x5728;&#x5927;&#x91CF;&#x968F;&#x673A;&#x4E8B;&#x4EF6;&#x548C;&#x6295;&#x4FDD;&#x60C5;&#x51B5;&#xFF0C;&#x6240;&#x6295;&#x4FDD;&#x60C5;&#x51B5;&#x6216;&#x591A;&#x6216;&#x5C11;&#x5177;&#x6709;&#x72EC;&#x7ACB;&#x6027;&#xFF0C;&#x968F;&#x673A;&#x4E8B;&#x4EF6;&#x7684;&#x6982;&#x7387;&#x53EF;&#x4EE5;&#x51C6;&#x786E;&#x7684;&#x4F30;&#x7B97;&#xFF0C;&#x4E2A;&#x4EBA;&#x5229;&#x76CA;&#x672A;&#x80FD;&#x8150;&#x8680;&#x4EBA;&#x4EEC;&#x7684;&#x57FA;&#x672C;&#x9053;&#x5FB7;</strong>&#x3002;</p>
+<p><strong>&#x9006;&#x5411;&#x9009;&#x62E9;</strong>  &#x5F53;&#x98CE;&#x9669;&#x6700;&#x5927;&#x8005;&#x6210;&#x4E3A;&#x6700;&#x6709;&#x53EF;&#x80FD;&#x8D2D;&#x4E70;&#x4FDD;&#x9669;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x53D1;&#x751F;&#x3002;&#x7EDF;&#x4E00;&#x7684;&#x4FDD;&#x9669;&#x5B9A;&#x4EF7;&#x4F1A;&#x4F7F;&#x9AD8;&#x98CE;&#x9669;&#x8005;&#x8D2D;&#x4E70;&#x4FDD;&#x9669;&#xFF0C;&#x4F4E;&#x98CE;&#x9669;&#x8005;&#x5B81;&#x80AF;&#x4E0D;&#x6295;&#x4FDD;&#x3002;</p>
+<h2 id="136-&#x793E;&#x4F1A;&#x4FDD;&#x9669;">136 &#x793E;&#x4F1A;&#x4FDD;&#x9669;</h2>
+<p>&#x5F53;&#x5E02;&#x573A;&#x4E0D;&#x7075;&#x5BFC;&#x81F4;&#x79C1;&#x4EBA;&#x4FDD;&#x9669;&#x4E0D;&#x80FD;&#x63D0;&#x4F9B;&#x8DB3;&#x591F;&#x7684;&#x4FDD;&#x9669;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x5F88;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x653F;&#x5E9C;&#x5F3A;&#x5236;&#x7684;<strong>&#x793E;&#x4F1A;&#x4FDD;&#x9669;</strong>&#x6765;&#x53D1;&#x6325;&#x4F5C;&#x7528;&#x3002;&#x653F;&#x5E9C;&#x5177;&#x6709;&#x7A0E;&#x6536;&#x548C;&#x8C03;&#x8282;&#x6743;&#x529B;&#xFF0C;&#x52A0;&#x4E0A;&#x6709;&#x80FD;&#x529B;&#x6269;&#x5927;&#x4FDD;&#x9669;&#x8986;&#x76D6;&#x9762;&#x800C;&#x907F;&#x514D;&#x9006;&#x5411;&#x9009;&#x62E9;&#x3002;&#x653F;&#x5E9C;&#x7684;&#x793E;&#x4F1A;&#x4FDD;&#x9669;&#x56E0;&#x800C;&#x53EF;&#x4EE5;&#x589E;&#x8FDB;&#x793E;&#x4F1A;&#x798F;&#x5229;&#x3002;</p>
+<p>&#x5E02;&#x573A;&#x4E0D;&#x7075;&#x7684;&#x91CD;&#x8981;&#x4F8B;&#x5B50;&#x662F;&#x5931;&#x4E1A;&#x4FDD;&#x9669;&#xFF1A;&#x9053;&#x5FB7;&#x98CE;&#x9669;&#xFF08;&#x4FDD;&#x9669;&#x9AD8;&#x7684;&#x8BDD;&#xFF0C;&#x4EBA;&#x4EEC;&#x4F1A;&#x4E3B;&#x52A8;&#x5931;&#x4E1A;&#xFF09;&#xFF0C;&#x9006;&#x5411;&#x9009;&#x62E9;&#xFF08;&#x7ECF;&#x5E38;&#x5931;&#x4E1A;&#x7684;&#x4EBA;&#x6700;&#x613F;&#x610F;&#x53C2;&#x52A0;&#xFF09;&#x4EE5;&#x53CA;&#x5931;&#x4E1A;&#x98CE;&#x9669;&#x4E0D;&#x5B58;&#x5728;&#x72EC;&#x7ACB;&#x6027;&#xFF0C;&#x4E8E;&#x662F;&#x653F;&#x5E9C;&#x7ECF;&#x5E38;&#x4ECB;&#x5165;&#x5931;&#x4E1A;&#x4FDD;&#x9669;&#x3002;</p>
+<h1 id="b-&#x535A;&#x5F08;&#x8BBA;"><strong>B</strong> <strong>&#x535A;&#x5F08;&#x8BBA;</strong></h1>
+<p>&#x7ECF;&#x6D4E;&#x751F;&#x6D3B;&#x4E2D;&#x5145;&#x6EE1;&#x4E86;&#x56FD;&#x6C11;&#xFF0C;&#x653F;&#x5E9C;&#x548C;&#x4F01;&#x4E1A;&#x4E89;&#x593A;&#x652F;&#x914D;&#x5730;&#x4F4D;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p><strong>&#x535A;&#x5F08;&#x8BBA;</strong>&#x6240;&#x5206;&#x6790;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x6216;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x6BD4;&#x8D5B;&#x8005;&#x6216;&#x53C2;&#x4E0E;&#x8005;&#x9009;&#x62E9;&#x80FD;&#x591F;&#x5171;&#x540C;&#x5F71;&#x54CD;&#x6BCF;&#x4E00;&#x53C2;&#x52A0;&#x8005;&#x7684;&#x884C;&#x52A8;&#x6216;&#x7B56;&#x7565;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#xFF08;&#x5308;&#x7259;&#x5229;&#x7684;&#x7EA6;&#x7FF0;&#xB7;&#x7EBD;&#x66FC;&#x521B;&#x7ACB;&#x4E4B;&#xFF09;</p>
+<h2 id="137-&#x5B9A;&#x4EF7;&#x7B56;&#x7565;">137 &#x5B9A;&#x4EF7;&#x7B56;&#x7565;</h2>
+<p>&#x5F53;&#x4E24;&#x4E2A;&#x516C;&#x53F8;&#x5747;&#x5BA3;&#x5E03;&#x5B9E;&#x884C;&#x6700;&#x4F4E;&#x4EF7;&#x65F6;&#xFF0C;&#x4EF7;&#x683C;&#x4F1A;&#x7ADE;&#x76F8;&#x964D;&#x4F4E;&#x8D8B;&#x8FD1;&#x4E8E;&#x96F6;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x516C;&#x53F8;&#x524A;&#x4EF7;&#x65F6;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5F80;&#x5F80;&#x4F1A;&#x91C7;&#x53D6;&#x76F8;&#x540C;&#x7684;&#x524A;&#x4EF7;&#x7B56;&#x7565;&#x3002;&#x53EA;&#x6709;&#x76EE;&#x5149;&#x77ED;&#x6D45;&#x7684;&#x4EBA;&#x624D;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x4EF7;&#x683C;&#x4F1A;&#x957F;&#x671F;&#x7684;&#x4F4E;&#x4E8E;&#x7ADE;&#x4E89;&#x5BF9;&#x624B;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x5F00;&#x59CB;&#x8003;&#x8651;&#x4ED6;&#x4EBA;&#x4F1A;&#x5982;&#x4F55;&#x5BF9;&#x81EA;&#x5DF1;&#x7684;&#x51B3;&#x7B56;&#x505A;&#x51FA;&#x53CD;&#x5E94;&#x65F6;&#xFF0C;&#x5C31;&#x8FDB;&#x5165;&#x4E86;&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x9886;&#x57DF;&#x3002;</p>
+<h2 id="138-&#x57FA;&#x672C;&#x6982;&#x5FF5;">138 &#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<p>&#x5982;&#x679C;&#x5E02;&#x573A;&#x4E0A;&#x7684;&#x4F9B;&#x5E94;&#x53EA;&#x7531;&#x4E24;&#x4E2A;&#x4F01;&#x4E1A;&#x63D0;&#x4F9B;&#xFF0C;&#x5C31;&#x53EB;&#x505A;<strong>&#x53CC;&#x5BE1;&#x5934;&#x5784;&#x65AD;&#x5E02;&#x573A;</strong>&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F01;&#x4E1A;&#x5229;&#x6DA6;&#x7684;&#x83B7;&#x5F97;&#x65E2;&#x53D6;&#x51B3;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x6218;&#x7565;&#xFF0C;&#x4E5F;&#x53D6;&#x51B3;&#x4E8E;&#x5BF9;&#x624B;&#x7684;&#x6218;&#x7565;&#xFF0C;&#x8FD9;&#x79CD;&#x535A;&#x5F08;&#x53EB;&#x505A;<strong>&#x5BF9;&#x6297;&#x535A;&#x5F08;</strong>&#x3002;</p>
+<p>&#x4F53;&#x73B0;&#x4E24;&#x4E2A;&#x4F01;&#x4E1A;&#x6216;&#x8005;&#x4E24;&#x4E2A;&#x4EBA;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x4F5C;&#x7528;&#x7684;&#x6709;&#x7528;&#x5DE5;&#x5177;&#x662F;&#x53CC;&#x65B9;&#x7684;<strong>&#x652F;&#x4ED8;&#x77E9;&#x9635;</strong>&#xFF0C;&#x53CC;&#x65B9;&#x7684;&#x83B7;&#x5229;&#x60C5;&#x51B5;&#x52BF;&#x5FC5;&#x4E92;&#x4E3A;&#x955C;&#x50CF;&#x3002;</p>
+<h2 id="139-&#x7B56;&#x7565;&#x9009;&#x62E9;">139 &#x7B56;&#x7565;&#x9009;&#x62E9;</h2>
+<p><strong>&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7CBE;&#x795E;&#x5728;&#x4E8E;&#xFF1A;&#x4E0D;&#x4EC5;&#x8981;&#x5206;&#x6790;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x884C;&#x52A8;&#x65B9;&#x6848;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x8981;&#x5206;&#x6790;&#x81EA;&#x5DF1;&#x7684;&#x76EE;&#x6807;&#x548C;&#x884C;&#x52A8;&#x4E0E;&#x5BF9;&#x624B;&#x7684;&#x76EE;&#x6807;&#x548C;&#x884C;&#x52A8;&#x4E4B;&#x95F4;&#x7684;&#x4E92;&#x52A8;&#x5173;&#x7CFB;&#x3002;&#x800C;&#x4E14;&#x5FC5;&#x987B;&#x59CB;&#x7EC8;&#x8BB0;&#x4F4F;&#xFF0C;&#x5BF9;&#x624B;&#x540C;&#x6837;&#x5728;&#x5206;&#x6790;&#x4F60;&#x7684;&#x6218;&#x7565;&#x3002;</strong></p>
+<p><strong>&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x6307;&#x5BFC;&#x601D;&#x60F3;</strong>&#x662F;&#xFF1A;&#x5047;&#x8BBE;&#x4F60;&#x7684;&#x5BF9;&#x624B;&#x5728;&#x7814;&#x7A76;&#x4F60;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x5E76;&#x91C7;&#x53D6;&#x8FFD;&#x6C42;&#x81EA;&#x8EAB;&#x6700;&#x5927;&#x5229;&#x76CA;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x8FD9;&#x65F6;&#x4F60;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x9009;&#x62E9;&#x6700;&#x6709;&#x6548;&#x7684;&#x7B56;&#x7565;&#x3002;</p>
+<p><strong>&#x5360;&#x4F18;&#x7B56;&#x7565;</strong>&#xFF1A;&#x65E0;&#x8BBA;&#x5176;&#x4ED6;&#x53C2;&#x4E0E;&#x8005;&#x9009;&#x62E9;&#x4F55;&#x79CD;&#x7B56;&#x7565;&#xFF0C;&#x8BE5;&#x535A;&#x5F08;&#x8005;&#x7684;&#x7B56;&#x7565;&#x603B;&#x662F;&#x6700;&#x597D;&#x7684;&#x3002;</p>
+<p>&#x5728;&#x4EF7;&#x683C;&#x535A;&#x5F08;&#x4E2D;&#xFF0C;&#x6B63;&#x5E38;&#x4EF7;&#x683C;&#x5BF9;&#x4E8E;&#x4E24;&#x4E2A;&#x4F01;&#x4E1A;&#x90FD;&#x662F;&#x5360;&#x4F18;&#x7B56;&#x7565;&#xFF0C;&#x5F53;&#x4E00;&#x65B9;&#x4EF7;&#x683C;&#x6218;&#x53E6;&#x4E00;&#x65B9;&#x6B63;&#x5E38;&#x4EF7;&#x683C;&#x65F6;&#xFF0C;&#x4EF7;&#x683C;&#x6218;&#x7684;&#x4E00;&#x65B9;&#x7531;&#x4E8E;&#x552E;&#x4EF7;&#x4F4E;&#x4E8E;&#x6210;&#x672C;&#x800C;&#x6BD4;&#x6B63;&#x5E38;&#x4EF7;&#x683C;&#x4F01;&#x4E1A;&#x635F;&#x5931;&#x66F4;&#x591A;&#x3002;&#x5728;&#x4E24;&#x4E2A;&#x6216;&#x5168;&#x90E8;&#x4F01;&#x4E1A;&#x90FD;&#x91C7;&#x7528;&#x5360;&#x4F18;&#x7B56;&#x7565;&#x65F6;&#xFF0C;&#x5C31;&#x9020;&#x6210;&#x4E86;<strong>&#x5360;&#x4F18;&#x5747;&#x8861;</strong>&#x3002;</p>
+<p>&#x5728;&#x5BF9;&#x6297;&#x535A;&#x5F08;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F01;&#x4E1A;&#x90FD;&#x5728;&#x8003;&#x8651;&#x662F;&#x91C7;&#x7528;&#x6B63;&#x5E38;&#x4EF7;&#x683C;&#xFF0C;&#x8FD8;&#x662F;&#x62AC;&#x9AD8;&#x4EF7;&#x683C;&#x5F62;&#x6210;&#x5784;&#x65AD;&#x5E76;&#x5C3D;&#x529B;&#x83B7;&#x53D6;&#x5784;&#x65AD;&#x5229;&#x6DA6;&#x3002;&#x5F53;&#x6BCF;&#x4E00;&#x65B9;&#x90FD;&#x91C7;&#x53D6;&#x9AD8;&#x4EF7;&#x7B56;&#x7565;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x6700;&#x5927;&#x7684;<strong>&#x8054;&#x5408;&#x5229;&#x6DA6;</strong>&#xFF1B;&#x90FD;&#x91C7;&#x53D6;&#x6B63;&#x5E38;&#x7B56;&#x7565;&#xFF0C;&#x83B7;&#x5F97;&#x6B63;&#x5E38;&#x5229;&#x6DA6;&#xFF1B;&#x4E00;&#x65B9;&#x9AD8;&#x4EF7;&#xFF0C;&#x4E00;&#x65B9;&#x6B63;&#x5E38;&#xFF0C;&#x9AD8;&#x4EF7;&#x65B9;&#x5931;&#x53BB;&#x5E02;&#x573A;&#xFF0C;&#x51FA;&#x73B0;&#x4E8F;&#x635F;&#xFF0C;&#x6B63;&#x5E38;&#x65B9;&#x5360;&#x9886;&#x5E02;&#x573A;&#xFF0C;&#x83B7;&#x5F97;&#x6700;&#x5927;&#x5229;&#x6DA6;&#x3002;&#x5F53;&#x4E00;&#x65B9;&#x91C7;&#x53D6;&#x6B63;&#x5E38;&#x4EF7;&#x683C;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x8FD9;&#x662F;&#x5BF9;&#x4ED6;&#x7684;&#x5360;&#x4F18;&#x7B56;&#x7565;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x5982;&#x679C;&#x91C7;&#x53D6;&#x9AD8;&#x4EF7;&#x53EA;&#x4F1A;&#x5931;&#x53BB;&#x5E02;&#x573A;&#x800C;&#x635F;&#x5931;&#x66F4;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x4E5F;&#x53EA;&#x6709;&#x91C7;&#x53D6;&#x6B63;&#x5E38;&#x4EF7;&#x683C;&#x3002;</p>
+<p><strong>&#x535A;&#x5F08;&#x8BBA;&#x7684;&#x4E00;&#x6761;&#x57FA;&#x672C;&#x51C6;&#x5219;&#xFF1A;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x6218;&#x7565;&#x5EFA;&#x7ACB;&#x5728;&#x5047;&#x5B9A;&#x5BF9;&#x624B;&#x4F1A;&#x6309;&#x5176;&#x6700;&#x4F73;&#x5229;&#x76CA;&#x884C;&#x52A8;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x3002;&#xFF08;P227&#xFF09;</strong></p>
+<p><strong>&#x7EB3;&#x4EC0;&#x5747;&#x8861;</strong>&#xFF1A;&#x53C8;&#x79F0;&#x975E;&#x5408;&#x4F5C;&#x6027;&#x5747;&#x8861;   &#x4E00;&#x4E2A;&#x5728;&#x5176;&#x4ED6;&#x535A;&#x5F08;&#x8005;&#x7684;&#x7B56;&#x7565;&#x65E2;&#x5B9A;&#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x4E00;&#x65B9;&#x8FD8;&#x80FD;&#x6539;&#x5584;&#x81EA;&#x5DF1;&#x83B7;&#x5229;&#x7684;&#x5883;&#x51B5;&#x3002;</p>
+<h2 id="140&#x5408;&#x8C0B;&#x8FD8;&#x662F;&#x4E0D;&#x5408;&#x8C0B;">140&#x5408;&#x8C0B;&#x8FD8;&#x662F;&#x4E0D;&#x5408;&#x8C0B;</h2>
+<p><strong>&#x975E;&#x5408;&#x4F5C;&#x6027;&#x5747;&#x8861;</strong>&#x5BF9;&#x4E8E;&#x535A;&#x5F08;&#x5404;&#x65B9;&#x6765;&#x8BF4;&#x53EF;&#x80FD;&#x4E0D;&#x662F;&#x6709;&#x6548;&#x7387;&#x7684;&#x5747;&#x8861;&#x3002;</p>
+<p><strong>&#x5408;&#x4F5C;&#x6027;&#x5747;&#x8861;</strong>&#xFF0C;&#x5373;&#x535A;&#x5F08;&#x5404;&#x65B9;&#x7ED3;&#x6210;&#x8054;&#x76DF;&#xFF0C;&#x5B9E;&#x884C;&#x5229;&#x6DA6;&#x6700;&#x5927;&#x5316;&#x7684;&#x7B56;&#x7565;&#x3002;&#x7531;&#x4E8E;&#x4EE5;&#x6D88;&#x8D39;&#x8005;&#x5229;&#x76CA;&#x4E3A;&#x4EE3;&#x4EF7;&#xFF0C;&#x5728;&#x5E02;&#x573A;&#x7ECF;&#x6D4E;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x8FD9;&#x79CD;&#x5408;&#x8C0B;&#x5F80;&#x5F80;&#x662F;&#x975E;&#x6CD5;&#x7684;&#xFF0C;&#x5E76;&#x53D7;&#x5230;&#x5404;&#x65B9;&#x535A;&#x5F08;&#x7684;&#x5236;&#x7EA6;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;<strong>&#x5B8C;&#x5168;&#x7ADE;&#x4E89;&#x5747;&#x8861;</strong>&#x662F;&#x4E00;&#x4E2A;&#x7EB3;&#x4EC0;&#x6216;&#x975E;&#x5408;&#x4F5C;&#x6027;&#x5747;&#x8861;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F01;&#x4E1A;&#x548C;&#x6D88;&#x8D39;&#x8005;&#x90FD;&#x5728;&#x8003;&#x8651;&#x5176;&#x4ED6;&#x5404;&#x65B9;&#x7684;&#x4EF7;&#x683C;&#x7B56;&#x7565;&#x540E;&#x505A;&#x51FA;&#x51B3;&#x5B9A;&#x3002;&#x201C;&#x770B;&#x4E0D;&#x89C1;&#x7684;&#x624B;&#x201D;&#x7684;&#x4E00;&#x4E2A;&#x56F0;&#x5883;&#x662F;&#xFF0C;&#x5373;&#x4F7F;&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x884C;&#x4E3A;&#x90FD;&#x662F;&#x975E;&#x5408;&#x4F5C;&#x7684;&#xFF0C;&#x5176;&#x7ECF;&#x6D4E;&#x540E;&#x679C;&#x4E5F;&#x4F1A;&#x8FBE;&#x5230;&#x793E;&#x4F1A;&#x6240;&#x671F;&#x671B;&#x7684;&#x7ECF;&#x6D4E;&#x6548;&#x7387;&#x72B6;&#x6001;&#x3002;</p>
+<h2 id="141&#x56DA;&#x5F92;&#x56F0;&#x5883;">141&#x56DA;&#x5F92;&#x56F0;&#x5883;</h2>
+<p>&#x4E24;&#x4E2A;&#x56DA;&#x5F92;A&#x548C;B&#x540C;&#x65F6;&#x4E0D;&#x5766;&#x767D;&#xFF0C;&#x5747;&#x670D;&#x5211;&#x4E00;&#x5E74;&#xFF1B;&#x4E00;&#x4EBA;&#x5766;&#x767D;&#xFF0C;&#x53E6;&#x4E00;&#x4EBA;&#x4E0D;&#x5766;&#x767D;&#xFF0C;&#x5766;&#x767D;&#x8005;&#x670D;&#x5211;&#x4E09;&#x4E2A;&#x6708;&#xFF0C;&#x4E0D;&#x5766;&#x767D;&#x8005;&#x670D;&#x5211;&#x5341;&#x5E74;&#xFF1B;&#x4E24;&#x8005;&#x540C;&#x65F6;&#x5766;&#x767D;&#xFF0C;&#x5747;&#x670D;&#x5211;&#x4E94;&#x5E74;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;A &#xFF0C;&#x5982;&#x679C;&#x5766;&#x767D;&#xFF0C;&#x5728;B&#x4E0D;&#x5766;&#x767D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EA;&#x9700;&#x670D;&#x5211;&#x4E09;&#x4E2A;&#x6708;&#xFF1B;&#x5728;B&#x5766;&#x767D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x9700;&#x670D;&#x5211;&#x4E94;&#x5E74;&#xFF0C;&#x800C;&#x8FD9;&#x6BD4;&#x4ED6;&#x4E0D;&#x5766;&#x767D;&#x7684;&#x5341;&#x5E74;&#x8981;&#x77ED;&#x5F88;&#x591A;&#x3002;</p>
+<p>&#x7ED3;&#x679C;&#x662F;&#xFF0C;&#x9664;&#x4E86;&#x4ED6;&#x4EEC;&#x9009;&#x62E9;&#x5408;&#x4F5C;&#x6216;&#x5229;&#x4ED6;&#x7B56;&#x7565;&#x4F1A;&#x5B9E;&#x9645;&#x7F29;&#x77ED;&#x5408;&#x8BA1;&#x7684;&#x670D;&#x5211;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x5408;&#x4F5C;&#x5219;&#x4F1A;&#x5747;&#x670D;&#x5211;&#x4E00;&#x5E74;&#xFF0C;&#x5426;&#x5219;&#x90FD;&#x5C06;&#x5766;&#x767D;&#x800C;&#x5747;&#x670D;&#x5211;5&#x5E74;&#x3002;</p>
+<h2 id="142-&#x6C61;&#x67D3;&#x535A;&#x5F08;">142 &#x6C61;&#x67D3;&#x535A;&#x5F08;</h2>
+<p>&#x6C61;&#x67D3;&#x535A;&#x5F08;&#x662F;&#x201C;&#x770B;&#x4E0D;&#x89C1;&#x7684;&#x624B;&#x201D;&#x7ADE;&#x4E89;&#x673A;&#x5236;&#x5931;&#x8D25;&#x7684;&#x5178;&#x578B;&#x6848;&#x4F8B;&#xFF0C;&#x7531;&#x4E8E;&#x5916;&#x90E8;&#x6027;&#x6548;&#x5E94;&#xFF0C;&#x65E0;&#x8BBA;&#x7EB3;&#x4EC0;&#x5747;&#x8861;&#x6216;&#x975E;&#x5408;&#x4F5C;&#x5747;&#x8861;&#x90FD;&#x662F;&#x65E0;&#x6548;&#x7387;&#x7684;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x653F;&#x5E9C;&#x5E94;&#x8BE5;&#x4ECB;&#x5165;&#xFF0C;&#x5F15;&#x5BFC;&#x4F01;&#x4E1A;&#x5728;&#x964D;&#x4F4E;&#x6C61;&#x67D3;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x83B7;&#x5F97;&#x540C;&#x6837;&#x7684;&#x5229;&#x6DA6;&#x3002;</p>
+<h2 id="143&#x81F4;&#x547D;&#x7684;&#x519B;&#x5907;&#x7ADE;&#x8D5B;">143&#x81F4;&#x547D;&#x7684;&#x519B;&#x5907;&#x7ADE;&#x8D5B;</h2>
+<p>&#x519B;&#x5907;&#x7ADE;&#x8D5B;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x5907;&#x975E;&#x5408;&#x4F5C;&#x5747;&#x8861;&#x7279;&#x5F81;&#x7684;&#x6781;&#x5EA6;&#x5371;&#x9669;&#x7684;&#x535A;&#x5F08;&#x6848;&#x4F8B;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x5F62;&#x9700;&#x8981;&#x5408;&#x4F5C;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#xFF0C;&#x5C06;&#x535A;&#x5F08;&#x7ED3;&#x679C;&#x4ECE;&#x65E0;&#x6548;&#x7387;&#x7684;&#x975E;&#x5408;&#x4F5C;&#x6027;&#x5747;&#x8861;&#x79FB;&#x52A8;&#x5230;&#x65E0;&#x6548;&#x7387;&#x7A0B;&#x5EA6;&#x6709;&#x6240;&#x51CF;&#x8F7B;&#x7684;&#x5408;&#x4F5C;&#x7ED3;&#x679C;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x6240;&#x6709;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x5B89;&#x5168;&#x548C;&#x798F;&#x5229;&#x3002;</p>
+<p><strong>&#x80DC;&#x8005;&#x5168;&#x5F97;&#x7684;&#x793E;&#x4F1A;</strong></p>
+<p><strong>&#x80DC;&#x8005;&#x5168;&#x5F97;&#x535A;&#x5F08;&#x7684;&#x7ED3;&#x679C;&#x5305;&#x62EC;&#xFF1A;&#x6700;&#x7545;&#x9500;&#x7269;&#x54C1;&#xFF0C;&#x4E13;&#x5229;&#xFF0C;&#x6BD4;&#x8D5B;&#x51A0;&#x519B;&#xFF0C;&#x8BFA;&#x8D1D;&#x5C14;&#x5956;&#x83B7;&#x5F97;&#x8005;&#xFF0C;&#x7F8E;&#x56FD;&#x603B;&#x7EDF;&#x3002;</strong></p>
+<p><strong>&#x5F53;&#x81EA;&#x7531;&#x5E02;&#x573A;&#x8005;&#x4E3B;&#x5F20;&#x5E02;&#x573A;&#x6FC0;&#x52B1;&#x5BFC;&#x81F4;&#x793E;&#x4F1A;&#x6709;&#x6548;&#x7ED3;&#x679C;&#x65F6;&#xFF0C;&#x80DC;&#x8005;&#x5168;&#x5F97;&#x5E02;&#x573A;&#x5438;&#x5F15;&#x4E86;&#x8FC7;&#x591A;&#x7684;&#x53C2;&#x4E0E;&#x8005;&#xFF0C;&#x603B;&#x4F53;&#x6548;&#x76CA;&#x6BD4;&#x6CA1;&#x6709;&#x4EBA;&#x53C2;&#x4E0E;&#x7ADE;&#x4E89;&#x7684;&#x6B7B;&#x677F;&#x5747;&#x8861;&#x8981;&#x597D;&#xFF0C;&#x4F46;&#x662F;&#x4F4E;&#x4E8E;&#x5931;&#x8D25;&#x8005;&#x4E0D;&#x53C2;&#x4E0E;&#x7ADE;&#x4E89;&#x7684;&#x6709;&#x6548;&#x7ED3;&#x679C;&#xFF0C;&#x5BFC;&#x81F4;&#x4E86;&#x65E0;&#x6548;&#x7387;&#x7684;&#x6295;&#x8D44;&#x548C;&#x6D88;&#x8D39;&#xFF0C;&#x5E76;&#x4E14;&#x7ECF;&#x5E38;&#x4F7F;&#x6587;&#x5316;&#x5815;&#x843D;&#x3002;</strong></p>
+<p><strong>&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x6D88;&#x8D39;&#x7D2F;&#x8BA1;&#x7A0E;&#xFF0C;&#x4EE5;&#x964D;&#x4F4E;&#x5A31;&#x4E50;&#xFF0C;&#x4F53;&#x80B2;&#x548C;&#x5546;&#x4E1A;&#x7B49;&#x5DE8;&#x989D;&#x62A5;&#x916C;&#x5F15;&#x53D1;&#x7684;&#x8FC7;&#x5EA6;&#x62E5;&#x6324;&#x7684;&#x7ADE;&#x4E89;&#x3002;</strong></p>
+<h2 id="144&#x535A;&#x5F08;&#xFF0C;&#x65E0;&#x5904;&#x4E0D;&#x5728;">144&#x535A;&#x5F08;&#xFF0C;&#x65E0;&#x5904;&#x4E0D;&#x5728;</h2>
+<p>&#x5916;&#x56FD;&#x7684;&#x7ADE;&#x4E89;&#x5F80;&#x5F80;&#x4F1A;&#x6253;&#x7834;&#x56FD;&#x5185;&#x7684;&#x5408;&#x4F5C;&#x5747;&#x8861;&#x548C;&#x5BE1;&#x5934;&#x5784;&#x65AD;&#x4EF7;&#x683C;&#x3002;</p>
+<p>&#x8BB8;&#x591A;&#x535A;&#x5F08;&#x7684;<strong>&#x5173;&#x952E;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#x5EFA;&#x7ACB;&#x4FE1;&#x8A89;</strong>&#xFF1A;&#x4E2D;&#x592E;&#x94F6;&#x884C;&#x7684;&#x5F3A;&#x786C;&#x653F;&#x7B56;&#xFF0C;&#x7ECF;&#x6D4E;&#x6CD5;&#x5F8B;&#x6CD5;&#x89C4;&#xFF0C;&#x627F;&#x62C5;&#x6CD5;&#x5F8B;&#x8D23;&#x4EFB;&#x7684;&#x5546;&#x4E1A;&#x5408;&#x540C;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; www.huweihuang.com 2017-2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated at 
+2019-08-04 09:33:35
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter-10-Competition-among-the-Fe.html" class="navigation navigation-prev " aria-label="Previous page: 第十章  寡头和垄断竞争">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-12-Ho-Markets-Determine-Ines.html" class="navigation navigation-next " aria-label="Next page: 第十二章  市场如何决定收入">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十一章  不确定性和博弈论","level":"3.8","depth":1,"next":{"title":"第十二章  市场如何决定收入","level":"4.1","depth":1,"path":"PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-12-Ho-Markets-Determine-Ines.md","ref":"PART-THREE-FACTOR-MARKETS-LABOR-LAND-AND-CAPITAL/Chapter-12-Ho-Markets-Determine-Ines.md","articles":[]},"previous":{"title":"第十章  寡头和垄断竞争","level":"3.7","depth":1,"path":"PART-TWO-MICROECONOMICS-SUPPLY-DEMAND-AND-PRODUCT-MARKETS/Chapter-10-Competition-among-the-Fe.md","ref":"PART-TWO-MICROECONOMICS-SUPPLY-DEMAND-AND-PRODUCT-MARKETS/Chapter-10-Competition-among-the-Fe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","ga","disqus","donate"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © www.huweihuang.com 2017-2018","modify_label":"Updated at ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"huweihuang"},"github":{"url":"https://github.com/huweihuang"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/huweihuang/samuelson-economics/blob/master/"},"splitter":{},"donate":{"alipay":"http://ozilwgpje.bkt.clouddn.com/donate/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"http://ozilwgpje.bkt.clouddn.com/donate/wechatpay.jpg","wechatText":"微信打赏"},"codesnippet":{},"sitemap-general":{"prefix":"https://www.huweihuang.com/samuelson-economics/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/favicon.ico","appleTouchMore":{"120x120":"images/favicon.ico","180x180":"images/favicon.ico"}},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"huweihuang/samuelson-economics","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"e146d71b77957235bba1e709d930f62e"},"ga":{"configuration":"auto","token":"UA-114718458-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"胡伟煌","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-21-Measuring-Economic-Activity.html#fig6.2.1","level":"6.2","list_caption":"Figure: img","alt":"img","nro":1,"url":"file:////Users/weihuanghu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"img","attributes":{},"skip":false,"key":"6.2.1"},{"backlink":"PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-21-Measuring-Economic-Activity.html#fig6.2.2","level":"6.2","list_caption":"Figure: img","alt":"img","nro":2,"url":"file:////Users/weihuanghu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.jpg","index":2,"caption_template":"图片 - _CAPTION_","label":"img","attributes":{},"skip":false,"key":"6.2.2"},{"backlink":"PART-FIVE-MACROECONOMICS-ECONOMIC-GROWTH-AND-BUSINESS-CYCLES/Chapter-21-Measuring-Economic-Activity.html#fig6.2.3","level":"6.2","list_caption":"Figure: img","alt":"img","nro":3,"url":"file:////Users/weihuanghu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.jpg","index":3,"caption_template":"图片 - _CAPTION_","label":"img","attributes":{},"skip":false,"key":"6.2.3"},{"backlink":"PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-32-Inflation.html#fig8.2.1","level":"8.2","list_caption":"Figure: img","alt":"img","nro":4,"url":"file:////Users/weihuanghu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"img","attributes":{},"skip":false,"key":"8.2.1"},{"backlink":"PART-SEVEN-UNEMPLOYMENT-INFLATION-AND-ECONOMIC-POLICY/Chapter-33-Frontiers-of-Macroeconomics.html#fig8.3.1","level":"8.3","list_caption":"Figure: img","alt":"img","nro":5,"url":"file:////Users/weihuanghu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.jpg","index":1,"caption_template":"图片 - _CAPTION_","label":"img","attributes":{},"skip":false,"key":"8.3.1"}]},"title":"经济学 学习笔记","language":"zh-hans","links":{"sidebar":{"胡伟煌的博客":"https://www.huweihuang.com"}},"gitbook":"*","description":"经济学 学习笔记"},"file":{"path":"PART-TWO-MICROECONOMICS-SUPPLY-DEMAND-AND-PRODUCT-MARKETS/Chapter-11-Economics-of-Uncertainty.md","mtime":"2019-08-04T01:33:35.346Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-07T04:51:58.656Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
